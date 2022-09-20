@@ -1,63 +1,93 @@
-        @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* font-family: 'Sacramento', cursive; */
-            font-family: 'Josefin Slab', serif;
-        }
-        .wrapper-container {
-            width: 700px;
-            margin: 4px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            border-radius: 20px;
-            box-shadow: 0 1px 3px rgb(60 64 67 / 15%), 0 1px 2px rgb(60 64 67 / 30%);
-        }
-        .wrapper-container:hover {
-            padding: 22px;
-            box-shadow: -2px 1px 3px rgb(219, 219, 219), 2px 1px 3px rgb(219, 219, 219);
-            transition: ease-in-out 400ms;
-        }
-        
-        /* footer */
-        .footer {
-            display: flex;
-            align-items: center;
-        }
-        .left-footer {
-            flex-basis: 250px;
-            border-right: 0.1px solid #ccc;
-        }
-        .left-footer h3 {
-            margin: 5px 0;
-        }
-        .left-footer p {
-            margin: 0;
-        }
-        .right-footer {
-            flex-basis: 450px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        .right-footer h3 {
-            margin: 5px 0;
-        }
-        .socials {
-            display: inline-block;
-            width: 20px;
-            color: rgb(0, 199, 189);
-        }
-        .socials:hover {
-            color: rgb(93, 255, 244);
-            font-size: 40px;
-            width: 40px;
-            transition: ease-in-out 100ms;
-        }
-        .copyright {
-            margin-top: 20px;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Sacramento', cursive; */
+    font-family: 'Josefin Slab', serif;
+}
+.wrapper-container {
+    width: 700px;
+    margin: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgb(60 64 67 / 15%), 0 1px 2px rgb(60 64 67 / 30%);
+}
+.wrapper-container:hover {
+    padding: 22px;
+    box-shadow: -2px 1px 3px rgb(219, 219, 219), 2px 1px 3px rgb(219, 219, 219);
+    transition: ease-in-out 400ms;
+}
+.wrapper-container > ul {
+    list-style: none;
+    padding-left: 10px;
+}
+li > ul {
+    margin: 0;
+    list-style: none;
+}
+li {
+    margin: 7px;
+}
+
+/* bread-crumb css */
+.bread-crumb {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.bread-crumb > div > a {
+    text-decoration: none;
+    color: rgb(0, 232, 232);
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: 600;
+    border: 0.1px solid transparent;
+}
+.bread-crumb > div > a:hover {
+    color: cyan;
+    border: 0.1px solid cyan;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    align-items: center;
+}
+.left-footer {
+    flex-basis: 250px;
+    border-right: 0.1px solid #ccc;
+}
+.left-footer h3 {
+    margin: 5px 0;
+}
+.left-footer p {
+    margin: 0;
+}
+.right-footer {
+    flex-basis: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.right-footer h3 {
+    margin: 5px 0;
+}
+.socials {
+    display: inline-block;
+    width: 20px;
+    color: rgb(0, 199, 189);
+}
+.socials:hover {
+    color: rgb(93, 255, 244);
+    font-size: 40px;
+    width: 40px;
+    transition: ease-in-out 100ms;
+}
+.copyright {
+    margin-top: 20px;
+}

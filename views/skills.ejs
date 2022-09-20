@@ -4,6 +4,9 @@
 <link rel="stylesheet" href="">
 <style>
     /* inline css */
+    .wrapper-container > ul {
+        list-style: none;
+    }
     h2 {
         margin: 5px 0;
     }
@@ -11,16 +14,36 @@
         margin: 5px 0;
     }
     h4 {
-        margin: 5px 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
     }
-    li {
-        margin: 10px;
+    h4 > img {
+        margin-right: 10px;
     }
     .item-flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+    .item-flex > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 0.02;
+    }
+    .fa-solid {
+        color: rgb(0, 202, 0);
+    }
+    .fa-regular {
+        color: rgb(205, 205, 205);
+        font-weight: 400;
+    }
+    .fa-shapes {
+        color: #000;
+    }
+
     .progress-bar {
         height: 20px;
         border-radius: 0;
@@ -30,14 +53,19 @@
 <body>
     <div class="wrapper-container">
         <!-- write your code here -->
+        <%-include('partials/bread-crumb.ejs')%>
         <h2>My Skills</h2>
         <ul>
             <li>
-                <h4>Programming</h4>
+                <h4>
+                    <img src="/images/programming.png" alt="programming image" width="20px">  Programming
+                </h4>
                 <ul>
                     <li>
                         <div class="item-flex">
-                            <div><b>C</b></div>
+                            <div>
+                                <img src="/images/c.png" alt="c image" width="20px" srcset=""> <b>C</b>
+                            </div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
@@ -50,7 +78,7 @@
                     </li>
                     <li>
                         <div class="item-flex">
-                            <div><b>C++</b></div>
+                            <div><img src="/images/cplusplus.png" alt="c++ image" width="20px" srcset=""> <b>C++</b></div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
@@ -63,7 +91,7 @@
                     </li>
                     <li>
                         <div class="item-flex">
-                            <div><b>Javascript</b></div>
+                            <div><img src="/images/js.png" alt="js image" width="20px" srcset=""> <b>Javascript</b></div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
@@ -77,11 +105,13 @@
                 </ul>
             </li>
             <li>
-                <h4>Web Technologies</h4>
+                <h4>
+                    <img src="/images/webtech.png" alt="webtech image" width="20px">  Web Technologies
+                </h4>
                 <ul>
                     <li>
                         <div class="item-flex">
-                            <div><b>HTML</b></div>
+                            <div><img src="/images/html.png" alt="html image" width="20px" srcset=""> <b>HTML</b></div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
@@ -94,7 +124,7 @@
                     </li>
                     <li>
                         <div class="item-flex">
-                            <div><b>CSS</b></div>
+                            <div><img src="/images/css.png" alt="css image" width="20px" srcset=""> <b>CSS</b></div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
@@ -108,11 +138,13 @@
                 </ul>
             </li>
             <li>
-                <h4>Database Management</h4>
+                <h4>
+                    <img src="/images/dbms.png" alt="dbms image" width="20px">  Database Management
+                </h4>
                 <ul>
                     <li>
                         <div class="item-flex">
-                            <div><b>MySQL</b></div>
+                            <div><img src="/images/mysql.png" alt="mysql image" width="20px" srcset=""> <b>MySQL</b></div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
@@ -125,7 +157,7 @@
                     </li>
                     <li>
                         <div class="item-flex">
-                            <div><b>MongoDB</b></div>
+                            <div><img src="/images/mongodb.png" alt="mongodb image" width="20px" srcset=""> <b>MongoDB</b></div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
@@ -139,11 +171,13 @@
                 </ul>
             </li>
             <li>
-                <h4>Miscellaneous</h4>
+                <h4>
+                    <img src="/images/miscellaneous.png" alt="miscellaneous image" width="20px">  Miscellaneous
+                </h4>
                 <ul>
                     <li>
                         <div class="item-flex">
-                            <div><b>Node.js</b></div>
+                            <div><img src="/images/nodejs.png" alt="nodejs image" width="20px" srcset=""> <b>Node.js</b></div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
@@ -156,7 +190,7 @@
                     </li>
                     <li>
                         <div class="item-flex">
-                            <div><b>Express.js</b></div>
+                            <div><img src="/images/express.png" alt="express image" width="20px" srcset=""> <b>Express.js</b></div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
@@ -169,7 +203,7 @@
                     </li>
                     <li>
                         <div class="item-flex">
-                            <div><b>Socket.io</b></div>
+                            <div><img src="/images/socket.png" alt="socket image" width="20px" srcset=""> <b>Socket.io</b></div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
@@ -182,7 +216,7 @@
                     </li>
                     <li>
                         <div class="item-flex">
-                            <div><b>Git</b></div>
+                            <div><img src="/images/git.png" alt="git image" width="20px" srcset=""> <b>Git</b></div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
@@ -196,11 +230,13 @@
                 </ul>
             </li>
             <li>
-                <h4>Operating Systems</h4>
+                <h4>
+                    <img src="/images/os.png" alt="os image" width="20px">  Operating Systems
+                </h4>
                 <ul>
                     <li>
                         <div class="item-flex">
-                            <div><b>Windows</b></div>
+                            <div><img src="/images/windows.png" alt="windows image" width="20px" srcset=""> <b>Windows</b></div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
@@ -213,7 +249,7 @@
                     </li>
                     <li>
                         <div class="item-flex">
-                            <div><b>Ubuntu</b></div>
+                            <div><img src="/images/ubuntu.png" alt="ubuntu image" width="20px" srcset=""> <b>Ubuntu</b></div>
                             <div>
                                 <!-- <progress class="progress-bar" value="80" max="100"> 80% </progress> -->
                                 <i class="fa-solid fa-star"></i>
